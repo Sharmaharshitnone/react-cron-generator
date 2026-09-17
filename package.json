@@ -1,0 +1,119 @@
+{
+  "name": "react-cron-generator",
+  "version": "2.6.0",
+  "description": "A powerful React component for building cron expressions with support for both Unix (5 fields) and Quartz (7 fields) formats. Features validation, format conversion, TypeScript support, and accessibility.",
+  "keywords": [
+    "react",
+    "React cron generator",
+    "cron builder",
+    "Scheduler expression builder",
+    "cron",
+    "cron-generator",
+    "cron-builder",
+    "cron-expression",
+    "scheduler",
+    "quartz",
+    "unix-cron",
+    "typescript",
+    "react-component",
+    "cron-ui",
+    "cron-editor",
+    "cron-validator",
+    "schedule-builder",
+    "time-scheduler"
+  ],
+  "author": {
+    "name": "Sojin Antony",
+    "url": "https://github.com/sojinantony01"
+  },
+  "contributors": [
+    {
+      "name": "Sojin Antony",
+      "url": "https://github.com/sojinantony01"
+    },
+    {
+      "name": "Bibin Antony",
+      "url": "https://github.com/bibinantony1998"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/sojinantony01/react-cron-generator/issues"
+  },
+  "dependencies": {
+    "cronstrue": "^3.13.0"
+  },
+  "type": "module",
+  "main": "build/index.js",
+  "module": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "README.md",
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
+    "LICENSE.txt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sojinantony01/react-cron-generator.git"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": ">=16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^5.1.2",
+    "@vitest/coverage-v8": "^4.1.10",
+    "cypress": "^15.8.1",
+    "jsdom": "^27.4.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.7.4",
+    "rollup": "^4.54.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^4.9.5",
+    "vite": "^8.0.16",
+    "vitest": "^4.0.16"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "rm -rf build && rollup -c",
+    "demo:build": "vite build",
+    "demo:preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --browser chrome",
+    "deploy": "npm run demo:build && gh-pages -d dist",
+    "prepublishOnly": "npm run build",
+    "format": "npx prettier --write './**/*.{ts,tsx,css,json}' --config ./.prettierrc.json",
+    "format-check": "npx prettier --check './**/*.{ts,tsx,css,json}' --config ./.prettierrc.json"
+  },
+  "homepage": "https://sojinantony01.github.io/react-cron-generator",
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
